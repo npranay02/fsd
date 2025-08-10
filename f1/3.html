@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="3.css">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+         <h1> Registration Form</h1>
+        First Name: <input type ="text" id="fn" placeholder="Enter your name" required>
+        <br>
+        Last Name: <input type="text" id="ln" placeholder="Enter your name" required>
+        <br>
+        Address: <textarea id="address" rows="2" columns="20" required></textarea>
+         <br>
+        Password: <input type="password" id="pwd" required>
+       <br>
+        Email: <input type="email" id="email" required>
+         <br>
+        DOB: <input type="date" id="dob" required>
+        <br>
+        <div class="gender">
+        Gender:
+        <input type="radio" id="male" name="gender" value="male">Male
+        <input type="radio" id="female" name="gender" value="female">Female
+        </div>
+        <br>
+        <div class="job_type">
+        Preferred Work Location:
+        <input type="checkbox" id="remote_job" name="job_type" value="remote">remote
+        <input type="checkbox" id="offline_job" name="job_type" value="offline">offline
+        <input type="checkbox" id="hybrid_job" name="job_type" value="hybrid">hybrid
+        </div>
+        <br>
+        <div class="country">
+        Select a Country:
+        <select id="country_select" name="country" required>
+                <option value="" disabled selected>-- Select your country --</option>
+                <option value="india">India</option>
+                <option value="usa">United States</option>
+                <option value="australia">Australia</option>
+                <option value="germany">Germany</option>
+                <option value="japan">Japan</option>
+        </select>
+        </div>
+        <br><br>
+        Upload Photo: <input type="file" accept="image" >
+        <br><br>
+        <button type= "submit"> Submit </button> 
+        <br>
+       <button type="reset" > Reset </button>
+    </form>
+</body>
+</html>
