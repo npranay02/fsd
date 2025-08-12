@@ -1,0 +1,19 @@
+<html>
+<script>
+function focusFunction()
+{
+document.getElementById("myInput").style.background = "yellow";
+}
+function blurFunction()
+{
+ document.getElementById("myInput").style.background = “white";
+}
+</script>
+<body>
+<p>When you enter the input field, a function is triggered which sets the
+background color to yellow. When you leave the input field, a function is triggered
+which sets the background color to white.</p>
+Enter your name: <input type="text” id="myInput" onfocus="focusFunction()"
+onblur="blurFunction()">
+</body>
+</html>
